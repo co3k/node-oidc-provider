@@ -2,7 +2,7 @@ const { clone } = require('lodash');
 
 const config = clone(require('../default.config'));
 
-config.features = { request: true, encryption: true };
+config.features = { request: true, encryption: true, introspection: true };
 config.unsupported = {
   requestObjectEncryptionAlgValues: ['RSA-OAEP'],
   requestObjectEncryptionEncValues: ['A192CBC-HS384'],
